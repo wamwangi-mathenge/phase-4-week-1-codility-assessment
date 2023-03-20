@@ -17,7 +17,7 @@
 class String
     def camelcase
         # Splitting the string into an array
-        words = self.splitting
+        words = self.split
 
         # Capitalize the first letter of each word
         words.map! { |word| word.capitalize }
@@ -26,3 +26,5 @@ class String
         words.join('')
     end
 end
+
+puts 'brian mathenge'.camelcase
